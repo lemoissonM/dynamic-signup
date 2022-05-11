@@ -1,36 +1,72 @@
 {
     "sections": [
       {
-        "submitButtonLabel": "login.submit",
+        "submitButtonLabel": "login.continue",
         "fields": [
           {
             "name": "firstName",
             "label": "First Name",
             "component": "TextInput",
             "type": "text"
-   }, {
+          }, 
+          {
             "name": "lastName",
             "label": "Last Name",
             "component": "TextInput",
             "type": "text"
-   }, {
+          }, 
+          {
             "name": "email",
             "label": "Email",
             "component": "TextInput",
             "type": "email"
-   }, {
+          }, 
+          {
             "name": "password",
             "label": "Password",
             "component": "PasswordInput"
-   }, {
+          }, 
+          {
             "name": "termsAndCondition",
             "component": {
               "name": "CheckboxBase",
               "props": {
                 "label": "Terms and Conditions and Privacy Policy"
               }
-   } }
-   ] }
+          } 
+        }
+        ]  
+      },
+      {
+        "submitButtonLabel": "login.submit",
+        "fields": [
+          {
+            "name": "birthPlace",
+            "label": "Birth Place",
+            "component": "TextInput",
+            "type": "text"
+          }, 
+          {
+            "name": "birthDate",
+            "label": "Birth Date",
+            "component": "TextInput",
+            "type": "date"
+          },
+          {
+            "name": "sex",
+            "component": {
+              "name": "Select",
+              "props": {
+                "label": "Sex",
+                "options": [{
+                  "value": "M",
+                  "label": "Male"
+                }]
+              }
+            }
+          }
+        ]  
+      }
     ],
     "validation": {
       "schema": {
@@ -42,7 +78,7 @@
             "required": true
           },
           "lastName": {
-   "type": "string",
+          "type": "string",
             "required": true
           },
           "email": {
