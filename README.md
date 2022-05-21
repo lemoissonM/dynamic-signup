@@ -1,5 +1,5 @@
-This project was bootstrapped with
-[Create React App](https://github.com/facebook/create-react-app).
+This project consist of building a dynamic form. The fields and validation can be provided in a json file.
+
 
 ## Available Scripts
 
